@@ -13,10 +13,12 @@ export class IntervalOperatorComponent implements OnInit {
   home$: Observable<string> = from(this.homeArr);
   ngOnInit(): void {
     this.home$.subscribe((data) => {
-      const numberSeq$ = interval(1000);
-      numberSeq$.subscribe((num) => {
-        if (num < 2) console.log(data + num);
-      });
+      // const numberSeq$ = interval(1000);
+      // numberSeq$.subscribe((num) => {
+      //   if (num < 2) console.log(data + num);
+      // });
+
+      console.log(data);
     });
   }
 }

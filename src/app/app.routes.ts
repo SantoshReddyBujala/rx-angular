@@ -7,6 +7,7 @@ import { FromOperatorComponent } from "./from-operator/from-operator.component";
 import { IntervalOperatorComponent } from "./interval-operator/interval-operator.component";
 import { DebounceTimeComponent } from "./debounce-time/debounce-time.component";
 import { FilterComponent } from "./filter/filter.component";
+import { MathOperatorsComponent } from "./math-operators/math-operators.component";
 
 export const routes: Routes = [
   { path: "rxjs-learning", component: RxjsLeaningComponent },
@@ -16,6 +17,7 @@ export const routes: Routes = [
   { path: "interval-operator", component: IntervalOperatorComponent },
   { path: "debounce-time", component: DebounceTimeComponent },
   { path: "filter", component: FilterComponent },
+  { path: "maths-operators", component: MathOperatorsComponent },
   { path: "", redirectTo: "/rxjs-learning", pathMatch: "full" },
   { path: "**", component: PageNotFoundComponent },
 ];
